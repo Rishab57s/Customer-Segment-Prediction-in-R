@@ -1,0 +1,15 @@
+summary(customer_data$Annual.Income..k..)
+hist(customer_data$Annual.Income..k..,
+  col="#660033",
+  main="Histogram for Annual Income",
+  xlab="Annual Income Class",
+  ylab="Frequency",
+  labels=TRUE)
+  
+plot(density(customer_data$Annual.Income..k..),
+    col="yellow",
+    main="Density Plot for Annual Income",
+    xlab="Annual Income Class",
+    ylab="Density")
+polygon(density(customer_data$Annual.Income..k..),
+        col="#ccff66")
